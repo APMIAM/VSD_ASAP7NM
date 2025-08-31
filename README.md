@@ -11,5 +11,11 @@ The ASAP 7nm PDK is an open-source process design kit for the 7nm technology nod
 
 
 
-## **Characterization of CMOS VTC Using ASAP7NM PDK**
+## **Characterization of CMOS VTC with ASAP7NM PDK**
+
+A CMOS inverter is a logic gate made of a PMOS and an NMOS transistor. When the input is low, the PMOS pulls the output high, and when the input is high, the NMOS pulls the output low, thus producing the inverted signal.
+
+
+__SPICE deck with unique voltage source:__
+
 
