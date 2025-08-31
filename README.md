@@ -18,4 +18,7 @@ A CMOS inverter is a logic gate made of a PMOS and an NMOS transistor. When the 
 
 __SPICE deck with unique voltage source:__
 
+![apm_inverter.spice](/SPICE_DECK/apm_inverter.spice)
+
+
 
