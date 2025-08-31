@@ -10,3 +10,6 @@ A FinFET (Fin Field-Effect Transistor) is a modern non-planar transistor where t
 The ASAP 7nm PDK is an open-source process design kit for the 7nm technology node, providing design rules, models, and guidelines to optimize performance, power, and area (PPA). It supports multiple EDA flows, includes process variation and DFM features, and ensures reliable fabrication. Leveraging FinFET technology, the PDK enables higher transistor performance with lower leakage, along with strong power management capabilities. Designed to meet modern semiconductor demands, it is suited for applications like high-performance computing, mobile devices, and AI.
 
 
+
+## **Characterization of CMOS VTC Using ASAP7NM PDK**
+
