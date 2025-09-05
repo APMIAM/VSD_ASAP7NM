@@ -427,6 +427,8 @@ __Design Using Xschem :__
 
 ![BGR](/Images/BGR_Schem.png)
 
+Here one Unique resistor value corresponding to the ASCII value of 'arka 'has been introduced to produce unique result.
+
 __DC Analysis :__
 
 SPICE CODE:
@@ -480,4 +482,4 @@ plot v(Vref)
 
 ![Startup](/Images/Start-up.png)
 
-As per the diagram the startup time is around 11n s for 0.8V supply and normal temperature.
+As per the diagram the startup time is around 11n s for 0.8V supply and at -40 C temperature.
