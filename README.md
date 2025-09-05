@@ -356,3 +356,23 @@ let gm = real(deriv(id, nfet_in))
     meas dc gm_max MAX gm
     plot gm
 ```
+![gm](Images/gm.png)
+
+__Frequency (f):__
+
+Here, the maximum operating frequency of the signal was determined based on the propagation delay time.
+
+SPICE Command:
+```
+tran 0.1 100p                         
+     
+    meas tran tr when nfet_in=0.074 RISE=1 
+    meas tran tf when nfet_out=0.675 FALL=1 
+   
+    let t_delay = tr + tf                  
+    print t_delay                         
+    let f = 1/t_delay                     
+    print f                         
+
+```
+
