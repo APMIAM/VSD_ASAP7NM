@@ -479,3 +479,5 @@ plot v(Vref)
 ```
 
 ![Startup](/Images/Start-up.png)
+
+As per the diagram the startup time is around 11n s for 0.8V supply and normal temperature.
