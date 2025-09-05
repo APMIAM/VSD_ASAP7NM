@@ -15,6 +15,9 @@ The ASAP 7nm PDK is an open-source process design kit for the 7nm technology nod
 
 A CMOS inverter is a logic gate made of a PMOS and an NMOS transistor. When the input is low, the PMOS pulls the output high, and when the input is high, the NMOS pulls the output low, thus producing the inverted signal.
 
+__CMOS Inverter Schematic Diagaram__
+
+![CMOS_Inverter_Schematic](/Images/Inverter_Schematic.png)
 
 __SPICE deck with unique voltage source:__
 
@@ -22,25 +25,28 @@ A small DC offset(ASCII value of arka/10) has been introduced at the input side 
 
 ```
 
-** sch_path: /home/vsduser/Desktop/asap_7nm_Xschem/APM/apm_inverter_vtc2.spice
+** sch_path: /home/vsduser/Desktop/My_Design/FinFet_Inverter/apm_inverter_finfet.sch
 **.subckt inverter_vtc
 Xpfet1 nfet_out nfet_in vdd vdd asap_7nm_pfet l=7e-009 nfin=14
+
 Xnfet1 nfet_out nfet_in GND GND asap_7nm_nfet l=7e-009 nfin=14
-V1 nfet_in GND pulse(0 0.7 20p 10p 10p 20p 500p 1)
-V2 vdd GND 0.7
-Vuniq in 0 DC 0.415
+
+V1 nfet_in GND pulse(41.5m 741.5m 20p 10p 10p 20p 500p 1)
+V2 vdd GND 741.5m
+
 **** begin user architecture code
 
 
-.dc v1 0 0.7 1m
+
+.dc V1 0 741.5m 1m
 *.tran 1e-12 100e-12
 
 .control
     * First run DC
-    dc v1 0 0.7 1m
+    dc V1 0 741.5m 1m
     run
 
-    * DC measurements
+    *DC measurements
     meas dc v_th when nfet_out = nfet_in
     plot nfet_out nfet_in
     
@@ -64,25 +70,30 @@ Vuniq in 0 DC 0.415
     let r_out= deriv(nfet_out,id)
     plot r_out
     plot id
-    
-    * Transient measurements
+     * Transient measurements
     tran 1e-12 100e-12
-    meas tran tpr when nfet_in = 0.35 rise = 1
-    meas tran tpf when nfet_out = 0.35 fall = 1
+    meas tran tpr when nfet_in = 0.367 rise = 1
+    meas tran tpf when nfet_out = 0.367 fall = 1
     let tp = (tpr + tpf) / 2
     let trans_current = v2#branch
     meas tran id_pwr integ trans_current from=2e-11 to=6e-11
-    let pwr = id_pwr * 0.7
+    **let pwr = id_pwr * 0.7
+    let pwr = id_pwr * 0.742
     let power = abs(pwr / 40e-12)
     print tpr tpf tp id_pwr pwr power
+    plot nfet_out nfet_in
   
     tran 0.1 100p                         
-    meas tran tr when nfet_in=0.07 RISE=1  
-    meas tran tf when nfet_out=0.63 FALL=1 
+     
+    meas tran tr when nfet_in=0.074 RISE=1 
+    meas tran tf when nfet_out=0.675 FALL=1 
+   
     let t_delay = tr + tf                  
     print t_delay                         
     let f = 1/t_delay                     
-    print f                              
+    print f                         
+    
+        
 
     
 
@@ -165,7 +176,7 @@ Vuniq in 0 DC 0.415
 ************************************************************
 **)
 .control
-pre_osdi /home/vsduser/Desktop/asap_7nm_Xschem/bsimcmg.osdi
+pre_osdi /home/vsduser/Desktop/My_Design/FinFet_Inverter/bsimcmg.osdi
 .endc
 
 
@@ -238,12 +249,13 @@ pre_osdi /home/vsduser/Desktop/asap_7nm_Xschem/bsimcmg.osdi
 ************************************************************
 **)
 .control
-pre_osdi /home/vsduser/Desktop/asap_7nm_Xschem/bsimcmg.osdi
+pre_osdi /home/vsduser/Desktop/asap_7nm_Xschem/APM/bsimcmg.osdi
 .endc
 
 
 **** end user architecture code
 .end
+    
 ```
 ![r_out](Images/r_out.png)
 
