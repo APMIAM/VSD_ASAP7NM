@@ -448,5 +448,7 @@ plot abs(v2#branch)
 .endc
 
 ```
+__Simulation Plot:__
+
 
 
