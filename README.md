@@ -257,5 +257,8 @@ pre_osdi /home/vsduser/Desktop/asap_7nm_Xschem/APM/bsimcmg.osdi
 .end
     
 ```
-![r_out](Images/r_out.png)
+
+__Transient_Waveform of CMOS_Inverter__
+
+![transient](Images/transient.png)
 
