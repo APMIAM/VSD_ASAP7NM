@@ -243,5 +243,5 @@ pre_osdi /home/vsduser/Desktop/asap_7nm_Xschem/bsimcmg.osdi
 **** end user architecture code
 .end
 ```
-
+![r_out](Images/r_out.png)
 
