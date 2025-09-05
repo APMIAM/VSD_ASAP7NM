@@ -344,3 +344,15 @@ meas dc vil find nfet_in when gain_av = gain_target cross=1
     let nml = vil - vol
 print nmh nml
 ```
+
+__Transconductance (Gm)__
+
+Transconductance is defined as the ratio of change in drain current and change in Vgs (Gate-source Voltage). In our case, we already have drain current and VGS is input voltage which is nfet_in.
+
+SPICE Command:
+
+```
+let gm = real(deriv(id, nfet_in))
+    meas dc gm_max MAX gm
+    plot gm
+```
