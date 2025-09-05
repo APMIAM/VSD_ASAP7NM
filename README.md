@@ -18,6 +18,8 @@ A CMOS inverter is a logic gate made of a PMOS and an NMOS transistor. When the 
 
 __SPICE deck with unique voltage source:__
 
+A small DC offset(ASCII value of arka/10) has been introduced at the input side to make the design unique and distinguishable.
+
 ```
 
 ** sch_path: /home/vsduser/Desktop/asap_7nm_Xschem/APM/apm_inverter_vtc2.spice
