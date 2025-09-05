@@ -329,3 +329,18 @@ print max_gain
 
 ```
 
+__Noise_Margin:__
+
+In a CMOS VTC, the noise margin indicates how much noise a circuit can tolerate without logic errors.It is described using two parameters: Noise Margin High (NMH) and Noise Margin Low (NML). NMH is the difference between the minimum guaranteed output high voltage (VOH) and the minimum input voltage recognized as a logic high (VIH). NML is the difference between the maximum output low voltage (VOL) and the maximum input voltage recognized as a logic low (VIL). Together, these values define the safety window within which the circuit can reliably interpret logic levels. A larger noise margin means the circuit is more robust against voltage fluctuations and external disturbances, ensuring stable digital operation.
+
+SPICE Command:
+```
+.dc V1 0 741.5m 1m
+meas dc vil find nfet_in when gain_av = gain_target cross=1
+    meas dc voh find nfet_out when gain_av = gain_target cross=1
+    meas dc vih find nfet_in when gain_av = gain_target cross=2
+    meas dc vol find nfet_out when gain_av = gain_target cross=2
+    let nmh = voh - vih
+    let nml = vil - vol
+print nmh nml
+```
