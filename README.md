@@ -427,5 +427,26 @@ __Design Using Xschem :__
 
 ![BGR](/Images/BGR_Schem.png)
 
+__DC Analysis :__
+
+SPICE CODE:
+```
+
+.dc temp -45 150 5
+.dc VDD 0 1 0.1
+.control
+pre_osdi /home/vsduser/Desktop/asap_7nm_Xschem/bsimcmg.osdi
+run
+plot v(Vref) v(VCTAT)
+plot v(Vref)-v(VCTAT)
+plot v(VCTAT)
+plot v(Vref)
+let temp_coeff = deriv(v(Vref))/1.24
+plot temp_coeff
+plot net9/30k Vref/33.33k VCTAT/33.33k
+plot abs(v2#branch)
+.endc
+
+```
 
 
