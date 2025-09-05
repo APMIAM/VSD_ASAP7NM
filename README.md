@@ -425,4 +425,7 @@ By properly scaling and summing PTAT with CTAT, their temperature variations can
 
 __Design Using Xschem :__
 
+![BGR](/Images/BGR_Schem.png)
+
+
 
