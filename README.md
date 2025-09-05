@@ -394,3 +394,13 @@ __Simulation Result for threshold,gm,noise-margin,propagation delay(tp),frequenc
 ![v_th-gm-NM](/Images/v_th-gm-NM.png)
 
 ![tpd_f_power](/Images/tpd_f_power.png)
+
+## ASSIGNMENT for Module II
+
+
+# My Project
+
+Here’s the project documentation:
+
+📄 [Assignment-table (PDF)](Table/VSD-TABLE.pdf)
+
