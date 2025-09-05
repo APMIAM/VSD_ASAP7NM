@@ -375,4 +375,17 @@ tran 0.1 100p
     print f                         
 
 ```
+__Output_Resistance:__
+
+The output resistance is defined as the ratio of output node voltage and the change in drain current.
+
+__SPICE Commands :__
+
+```
+let r_out= deriv(nfet_out,id)   : Calculates the output resistance by taking the derivative of the output voltage with respect to the branch current.
+plot r_out                      : Plots the output resistance.
+```
+
+![r_out](/Images/r_out.png)
+
 
