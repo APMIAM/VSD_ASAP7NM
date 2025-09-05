@@ -398,9 +398,8 @@ __Simulation Result for threshold,gm,noise-margin,propagation delay(tp),frequenc
 ## ASSIGNMENT for Module II
 
 
-# My Project
+## Parameters Variation with W/L variation:
 
-Here’s the project documentation:
 
 📄 [Assignment-table (PDF)](Table/VSD-TABLE.pdf)
 
