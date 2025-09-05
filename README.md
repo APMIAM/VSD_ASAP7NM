@@ -389,3 +389,8 @@ plot r_out                      : Plots the output resistance.
 ![r_out](/Images/r_out.png)
 
 
+__Simulation Result for threshold,gm,noise-margin,propagation delay(tp),frequency,power-consumption :__
+
+![v_th-gm-NM](/Images/v_th-gm-NM.png)
+
+![tpd_f_power](/Images/tpd_f_power.png)
