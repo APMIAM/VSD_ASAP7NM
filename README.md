@@ -454,4 +454,8 @@ __Simulation Plot:__
 
 ![Vctat](/Images/Vctat.png)
 
+![Vptat](/Images/Vptat.png)
+
+![Vref/33.3k](Images/Vref-33.3k.png)
+
 
