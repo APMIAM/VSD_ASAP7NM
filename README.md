@@ -458,4 +458,6 @@ __Simulation Plot:__
 
 ![Vref/33.3k](Images/Vref-33.3k.png)
 
+![Vref-ctat](/Images/Vref-Vctat.png)
+
 
