@@ -403,3 +403,12 @@ __Simulation Result for threshold,gm,noise-margin,propagation delay(tp),frequenc
 
 📄 [Assignment-table (PDF)](Table/VSD-TABLE.pdf)
 
+
+## BGR(Bandgap Reference Circuit)
+
+  __What is BGR__
+
+  A bandgap reference circuit is a fundamental analog block designed to provide a stable and accurate reference voltage that is largely unaffected by changes in temperature, supply voltage, or manufacturing variations. It typically generates a voltage near 1.2 V, corresponding to the silicon bandgap energy. The circuit achieves temperature stability by combining two opposing voltage components: a PTAT (Proportional To Absolute Temperature) voltage that rises with temperature, and a CTAT (Complementary To Absolute Temperature) voltage that falls with temperature. By carefully balancing these contributions, the overall output becomes temperature-independent.
+
+__Circuit_Diagram_of_BGR :__
+
