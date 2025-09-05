@@ -412,3 +412,5 @@ __Simulation Result for threshold,gm,noise-margin,propagation delay(tp),frequenc
 
 __Circuit_Diagram_of_BGR :__
 
+![BGR](/Images/BGR.png)
+
