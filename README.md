@@ -421,3 +421,8 @@ CTAT component: The base–emitter voltage (V_BE) of a BJT decreases with temper
 PTAT component: The difference between two V_BE values at different current densities (ΔV_BE) increases linearly with temperature.
 
 By properly scaling and summing PTAT with CTAT, their temperature variations cancel, producing a nearly constant reference of about 1.2 V, close to silicon’s bandgap voltage.
+
+
+__Design Using Xschem :__
+
+
