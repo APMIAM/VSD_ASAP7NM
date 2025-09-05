@@ -268,4 +268,9 @@ The switching threshold of an inverter is the input voltage at which the input a
 
 ![switching_threshold](Images/switching_threshold.png)
 
+Here it is 367mV.
 
+SPICE Command :
+```
+ meas dc v_th when nfet_out = nfet_in
+```
