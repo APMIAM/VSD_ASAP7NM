@@ -450,5 +450,6 @@ plot abs(v2#branch)
 ```
 __Simulation Plot:__
 
+![Vref](/Images/Vref.png)
 
 
