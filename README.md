@@ -274,3 +274,17 @@ SPICE Command :
 ```
  meas dc v_th when nfet_out = nfet_in
 ```
+
+__Drain_Current:__
+
+The drain current (ID) in a FET is the current flowing from drain to source, controlled by the gate voltage. The gate’s electric field modulates channel conductivity: a higher gate voltage makes the channel more conductive, increasing current. In the triode region, ID rises roughly linearly with drain-source voltage, while in the saturation region, it becomes nearly constant and independent of that voltage. Drain current is a fundamental parameter for transistor performance in both analog (amplifiers) and digital (logic circuits) applications.
+
+SPICE Command:
+```
+.dc V1 0 741.5m 1m
+let id = v2#branch
+plot id
+
+```
+
+![]
