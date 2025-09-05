@@ -288,3 +288,44 @@ plot id
 ```
 
 ![id](Images/id.png)
+
+__Power_Consumption:__
+
+Power Consumption is the product of integral of transient current and Vdd divided by the time period.
+Spice Code:
+```
+ tran 1e-12 100e-12
+    meas tran tpr when nfet_in = 0.367 rise = 1
+    meas tran tpf when nfet_out = 0.367 fall = 1
+    let tp = (tpr + tpf) / 2
+    let trans_current = v2#branch
+    meas tran id_pwr integ trans_current from=2e-11 to=6e-11
+    let pwr = id_pwr * 0.742
+    let power = abs(pwr / 40e-12)
+    print power
+```
+
+
+__Propagation_Delay :__
+
+The propagation delay of a logic gate is the time between the input reaching 50% of its transition and the output reaching 50% of its transition. The rise time (tr) is the time for the output to move from 10% to 90% of its maximum value, while the fall time (tf) is the time for it to drop from 90% to 10%. Some designs instead use 30–70% definitions, depending on requirements.
+SPICE Command:
+```
+meas tran tpr when nfet_in=0.367 RISE=1 : Measures the rise time (tpr) when the input voltage reaches 0.35V
+meas tran tpf when nfet_out=0.367 FALL=1 : Measures the fall time (tpf) when the output voltage reaches 0.35V. 
+let tp = (tpf + tpr)/2 : Calculates the average propagation delay (tp) as the mean of the rise and fall times.
+print tp : prints the Propagation Delay
+
+```
+
+__Gain(Av)__
+
+Gain is defined as Change in output voltage to that of input voltage. Spice Commands to calculate gain
+```
+dc V1 0 741.5m 1m
+let gain_av = abs(deriv(nfet_out))
+meas dc max_gain max gain_av
+print max_gain
+
+```
+
