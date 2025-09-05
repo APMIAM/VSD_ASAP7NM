@@ -477,3 +477,5 @@ plot v(VCTAT)
 plot v(Vref)
 
 ```
+
+![Startup](/Images/Start-up.png)
