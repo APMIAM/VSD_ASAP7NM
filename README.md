@@ -262,3 +262,10 @@ __Transient_Waveform of CMOS_Inverter__
 
 ![transient](Images/transient.png)
 
+__Switching Threshold:__
+
+The switching threshold of an inverter is the input voltage at which the input and output voltages are equal.At this point, both NMOS and PMOS conduct the same current, and the inverter flips its state.In a DC sweep, the switching threshold is the intersection point where the inverter transfer curve (VTC) crosses the line nfet_out=nfet_in.The switching threshold determines noise margins (how much noise the circuit can tolerate without flipping logic states).If it shifts too high or too low, the inverter becomes imbalanced: one transistor dominates, and noise tolerance suffers.Ideally it is equal to half of supply voltage.
+
+![switching_threshold](Images/switching_threshold.png)
+
+
