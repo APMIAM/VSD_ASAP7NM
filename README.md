@@ -700,3 +700,5 @@ pre_osdi /home/hprcse/Documents/test/bsimcmg.osdi
 
 [Assignment_Table (PDF)](Table/Assignment2.pdf)
 
+Rows 4 & 5 are at different temperatures (−40 °C and 125 °C). We cannot compute line regulation from those single-VDD entries that needed Vref at multiple VDD values at those same temperatures.These line-reg numbers are quite large (≈1 V/V) — indicating Vref tracks VDD strongly (poor line regulation).
+
