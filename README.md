@@ -258,8 +258,9 @@ pre_osdi /home/vsduser/Desktop/asap_7nm_Xschem/APM/bsimcmg.osdi
     
 ```
 
-__Transient_Waveform of CMOS_Inverter__
 
+
+__Transient analysis of CMOS_Inverter__
 ![transient](Images/transient.png)
 
 __Switching Threshold:__
@@ -395,10 +396,10 @@ __Simulation Result for threshold,gm,noise-margin,propagation delay(tp),frequenc
 
 ![tpd_f_power](/Images/tpd_f_power.png)
 
-## ASSIGNMENT for Module II
+## ASSIGNMENT 1
 
 
-## Parameters Variation with W/L variation:
+**Parameters Variation with W/L variation:**
 
 
 📄 [Assignment-table (PDF)](Table/VSD-TABLE.pdf)
