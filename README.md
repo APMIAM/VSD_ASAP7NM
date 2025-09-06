@@ -10,13 +10,17 @@ A FinFET (Fin Field-Effect Transistor) is a modern non-planar transistor where t
 The ASAP 7nm PDK is an open-source process design kit for the 7nm technology node, providing design rules, models, and guidelines to optimize performance, power, and area (PPA). It supports multiple EDA flows, includes process variation and DFM features, and ensures reliable fabrication. Leveraging FinFET technology, the PDK enables higher transistor performance with lower leakage, along with strong power management capabilities. Designed to meet modern semiconductor demands, it is suited for applications like high-performance computing, mobile devices, and AI.
 
 
-## **Charecteristic of nfet based Inverter :**
+##  Single FinFet based Inverter :
 
+  __Schematic Diagram :__
 
+  ![Fet-Inverter](/Images/nfet_inverter.png)
 
+__Id with Different Voltage Sweep :__
 
+![v-sweep](/Images/nfet-vsweep.png)
 
-## **Characterization of CMOS VTC with ASAP7NM PDK**
+## **Characterization of CMOS VTC :**
 
 A CMOS inverter is a logic gate made of a PMOS and an NMOS transistor. When the input is low, the PMOS pulls the output high, and when the input is high, the NMOS pulls the output low, thus producing the inverted signal.
 
@@ -26,7 +30,7 @@ __CMOS Inverter Schematic Diagaram__
 
 __SPICE deck with unique voltage source:__
 
-A small DC offset(ASCII value of arka/10) has been introduced at the input side to make the design unique and distinguishable.
+A small **DC offset(ASCII value of arka/10)** has been introduced at the input side to make the design unique and distinguishable.
 
 ```
 
