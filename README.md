@@ -32,7 +32,7 @@ __Id with Different Voltage Sweep :__
 
 A CMOS inverter is a logic gate made of a PMOS and an NMOS transistor. When the input is low, the PMOS pulls the output high, and when the input is high, the NMOS pulls the output low, thus producing the inverted signal.
 
-__CMOS Inverter Schematic Diagaram__
+__CMOS Inverter Schematic Diagram__
 
 ![CMOS_Inverter_Schematic](/Images/Inverter_Schematic.png)
 
