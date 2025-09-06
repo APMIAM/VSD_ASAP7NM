@@ -710,3 +710,7 @@ This five-day workshop highlights the advantages of IC design using FinFET techn
 ## ACKNOWEDGEMENT 
 
 I would like to thank Kunal Ghosh (Co-Founder of VSD) and R S Madhuri  for guiding me throughout this research work on Bandgap reference circuit using ASAP 7nm PDK.
+
+## REFERENCES 
+
+* Github https://github.com/johnkustin/bandgapReferenceCircuit
