@@ -696,3 +696,7 @@ pre_osdi /home/hprcse/Documents/test/bsimcmg.osdi
 
 ```
 
+## ASSIGNMENT 2:
+
+[Assignment_Table (PDF)](Table/Assignment2.pdf)
+
