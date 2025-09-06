@@ -703,6 +703,10 @@ pre_osdi /home/hprcse/Documents/test/bsimcmg.osdi
 Rows 4 & 5 are at different temperatures (−40 °C and 125 °C). We cannot compute line regulation from those single-VDD entries that needed Vref at multiple VDD values at those same temperatures.These line-reg numbers are quite large (≈1 V/V) — indicating Vref tracks VDD strongly (poor line regulation).
 
 
+## CONCLUSION :
+
+This five-day workshop highlights the advantages of IC design using FinFET technology. The analyses conducted clearly demonstrate the superiority of FinFET-based circuits at advanced technology nodes, especially in achieving better performance at lower scales.
+
 ## ACKNOWEDGEMENT 
 
 I would like to thank Kunal Ghosh (Co-Founder of VSD) and R S Madhuri  for guiding me throughout this research work on Bandgap reference circuit using ASAP 7nm PDK.
