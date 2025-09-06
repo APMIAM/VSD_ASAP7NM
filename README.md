@@ -404,7 +404,8 @@ __Simulation Result for threshold,gm,noise-margin,propagation delay(tp),frequenc
 📄 [Assignment-table (PDF)](Table/VSD-TABLE.pdf)
 
 
-## BGR(Bandgap Reference Circuit)
+
+##  BGR(Bandgap Reference Circuit)
 
   __What is BGR__
 
