@@ -714,3 +714,5 @@ I would like to thank Kunal Ghosh (Co-Founder of VSD) and R S Madhuri  for guidi
 ## REFERENCES 
 
 * Github https://github.com/johnkustin/bandgapReferenceCircuit
+
+* UC Barkley Research https://escholarship.org/content/qt2d46r42j/qt2d46r42j.pdf?t=q6z2kq
