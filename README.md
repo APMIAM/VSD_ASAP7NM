@@ -3,6 +3,10 @@
 
 The growing functional complexity and demand for higher integration within a single IC have driven scientists and engineers to explore alternative technologies for improved performance. However, the limitations posed by short-channel effects render planar MOSFETs inadequate at lower technology nodes. This has led to the development of new device structures offering better controllability.
 
+![Next-device](/Images/Next-device.png)
+
+![Finfet-evolution](/Images/Finfet-evolution.png)
+
 
 **What is FinFET?**
 
