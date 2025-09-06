@@ -716,3 +716,7 @@ I would like to thank Kunal Ghosh (Co-Founder of VSD) and R S Madhuri  for guidi
 * Github https://github.com/johnkustin/bandgapReferenceCircuit
 
 * UC Barkley Research https://escholarship.org/content/qt2d46r42j/qt2d46r42j.pdf?t=q6z2kq
+
+* Github https://github.com/RSMadhuri66/Bandgap-Reference-Circuit-with-SCMB-with-ASAP-7nm-PDK-.git
+
+* Github https://github.com/RSMadhuri66/avsdbgr_7nm.git
