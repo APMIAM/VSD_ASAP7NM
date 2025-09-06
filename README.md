@@ -1,5 +1,9 @@
 #            FINFET Circuit Design and Charecterization
 ## **Introduction**
+
+The growing functional complexity and demand for higher integration within a single IC have driven scientists and engineers to explore alternative technologies for improved performance. However, the limitations posed by short-channel effects render planar MOSFETs inadequate at lower technology nodes. This has led to the development of new device structures offering better controllability.
+
+
 **What is FinFET?**
 
 A FinFET (Fin Field-Effect Transistor) is a modern non-planar transistor where the channel is formed in a thin vertical silicon fin controlled by a gate that wraps around three sides. This 3D structure improves electrostatic control, reduces leakage, and enables higher performance compared to traditional planar MOSFETs. FinFETs became the standard transistor design for advanced semiconductor nodes such as 14 nm, 10 nm, and 7 nm, and often use multiple fins in parallel under a single gate to boost drive strength.
