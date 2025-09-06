@@ -489,7 +489,7 @@ __SPICE Deck for BGR netlist:__
 ```
 
 ** sch_path: /home/vsduser/Desktop/asap_7nm_Xschem/BGR.sch
-**.subckt Bandgap_REference
+**.subckt Bandgap-Ref
 Xpfet1 Vref net1 VDD net11 asap_7nm_pfet l=7e-009 nfin=14
 Xpfet2 net1 net1 VDD net12 asap_7nm_pfet l=7e-009 nfin=14
 Xpfet3 net7 net1 net1 net13 asap_7nm_pfet l=7e-009 nfin=14
